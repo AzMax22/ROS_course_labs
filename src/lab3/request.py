@@ -7,10 +7,6 @@ import rospy
 from geometry_msgs.msg import Vector3
 from std_msgs.msg import Float32
 
-
-rospy.init_node("request")
-pub = rospy.Publisher("v3", Vector3, queue_size=10, latch=True)
-
 recieve_msg_flag = False
 
 
@@ -37,6 +33,9 @@ def callback(msg):
     global recieve_msg_flag 
     recieve_msg_flag = True
 
+
+rospy.init_node("request")
+pub = rospy.Publisher("v3", Vector3, queue_size=10, latch=True)
 rospy.Subscriber("res", Float32,callback, queue_size=10)   
 
 

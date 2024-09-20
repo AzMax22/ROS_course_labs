@@ -4,9 +4,6 @@ import rospy
 from geometry_msgs.msg import Vector3
 from std_msgs.msg import Float32
 
-rospy.init_node("summator")
-pub = rospy.Publisher("res", Float32, queue_size=10)
-
 
 def callback(msg):
     rospy.loginfo(f"{rospy.get_name()}: I get v3 - {msg}")
@@ -19,6 +16,8 @@ def callback(msg):
     pub.publish(msg_res)
 
 
+rospy.init_node("summator")
+pub = rospy.Publisher("res", Float32, queue_size=10)
 rospy.Subscriber('v3_pow', Vector3, callback, queue_size=10)
 
 
