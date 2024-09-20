@@ -1,0 +1,18 @@
+<launch>
+    <arg name="topic_name" default="new_name_topic" />
+
+    <group ns="even_num">
+            
+        <include file="$(find super_max_study_pkg)/launch/another_one.launch" pass_all_args="true"/>
+
+        <node name="sub" pkg="super_max_study_pkg" type="pub_even_num.py" output="screen">
+            <remap from="even_num" to="$(arg topic_name)"/>
+        </node>
+        
+        <node name="pub" pkg="super_max_study_pkg" type="sub_even_num.py" output="screen">
+            <remap from="even_num" to="$(arg topic_name)"/>
+        </node>
+
+        <node name="overflow" pkg="super_max_study_pkg" type="sub_overflow.py" output="screen"/>
+    </group>
+</launch>

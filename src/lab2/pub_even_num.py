@@ -8,7 +8,7 @@ rospy.init_node('pub_even_num')
 even_pub = rospy.Publisher('even_num', String, queue_size=10)
 overflow_pub = rospy.Publisher('overflow', String, queue_size=10)
 
-rate = rospy.Rate(10) # 1 Hz
+rate = rospy.Rate(1) # 1 Hz
 
 
 def publish_text(pub, text):

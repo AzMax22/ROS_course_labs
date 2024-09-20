@@ -1,0 +1,4 @@
+<launch>
+    <node  pkg="super_max_study_pkg" name="polynom" type="polynom.py" output="screen"/>
+    <node  pkg="super_max_study_pkg" name="summator" type="summator.py" output="screen"/>
+</launch>
