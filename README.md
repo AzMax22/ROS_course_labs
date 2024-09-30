@@ -1,4 +1,4 @@
-# ROS_lab
+# ROS_course_labs
 Репозиторий содержит результат выполнения лабораторных из данного курса по [ROS](https://github.com/lsd-maddrive/ROS_course/tree/main).
 
 
