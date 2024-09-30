@@ -1,5 +1,5 @@
 # ROS_lab
-Репозиторий содержит результат выполнения лабораторных из курса про [ROS](https://github.com/lsd-maddrive/ROS_course/tree/main).
+Репозиторий содержит результат выполнения лабораторных из данного курса по [ROS](https://github.com/lsd-maddrive/ROS_course/tree/main).
 
 
 
