@@ -1,5 +1,6 @@
 # ROS_lab
-Ссылка на курс: [тут](https://github.com/lsd-maddrive/ROS_course/tree/main)
+Репозиторий содержит результат выполнения лабораторных из курса про [ROS](https://github.com/lsd-maddrive/ROS_course/tree/main).
+
 
 
 ## Файловая система
@@ -20,7 +21,7 @@
 roslaunch super_max_study_pkg lab2.launch
 ```
 
-
+------------------
 
 ### Лаб 3
 **Задание:**
@@ -35,6 +36,9 @@ roslaunch super_max_study_pkg lab3.launch
 ```
 rosrun super_max_study_pkg request.py _x3:=10 _x2:=10 _x1:=10
 ```
+
+-----------------
+
 ### Лаб 4
 **Задание:**
 подробнее [тут](https://github.com/lsd-maddrive/ROS_course/blob/main/labs/04_TF.md)
